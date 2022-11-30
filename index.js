@@ -3,9 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const hello = require("./api/Hello");
 
-app.use("/hello", async (_, res) => {
-    res.send({ "message": "hello world" })
-});
+app.use("/api/hello", hello);
 
 app.use("/", async (_, res) => {
     res.send({ "message": "hi, this is running" })
