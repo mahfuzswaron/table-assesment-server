@@ -5,7 +5,9 @@ const hello = require("./api/Hello");
 
 app.use("/api/hello", hello);
 
-
+app.use("/", async (_, res) => {
+    res.send({ "message": "hi, this is running" })
+})
 
 app.listen(PORT, () => {
     console.log(`Hello, this app is running on port ${PORT} `)
