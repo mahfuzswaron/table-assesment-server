@@ -8,5 +8,5 @@ app.use("/api/hello", hello);
 
 
 app.listen(PORT, () => {
-    console.log(`Hello sadia's heart, this app is running on port ${PORT} `)
+    console.log(`Hello, this app is running on port ${PORT} `)
 })
